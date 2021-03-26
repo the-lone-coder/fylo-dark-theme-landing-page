@@ -5,10 +5,10 @@
 :root {
 
     /* Primary Colors */
-    --dark-blue: hsl(217, 28%, 15%);    /* intro and email sign up background */
-    --dark-blue: hsl(218, 28%, 13%);    /* main background */
-    --dark-blue: hsl(216, 53%, 9%);     /* footer background */
-    --dark-blue: hsl(219, 30%, 18%);    /* testimonials background */
+    --dark-blue: hsl(217, 28%, 15%);            /* intro and email sign up background */
+    --dark-blue-main: hsl(218, 28%, 13%);       /* main background */
+    --dark-blue-footer: hsl(216, 53%, 9%);      /* footer background */
+    --dark-blue-feedback: hsl(219, 30%, 18%);   /* testimonials background */
 
     /* Accent Colors */
     --cyan: hsl(176, 68%, 64%);         /* inside call-to-action gradient */
@@ -25,3 +25,40 @@
     margin: 0;
     padding: 0;
 }
+
+body {
+    background-color: var(--dark-blue-main);
+}
+
+
+/* header-styling */
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 70px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+}
+
+.nav-list ul {
+    display: flex;
+    flex-direction: row;
+    font-size: 14px;
+    list-style-type: none;
+}
+
+.nav-list li {
+    margin-top: 1rem;
+    padding-right: 50px;
+}
+
+.nav-list li:last-child {
+    padding-right: 0;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: var(--white);
+}
+/* header-styling ends */
