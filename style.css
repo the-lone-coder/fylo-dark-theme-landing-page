@@ -39,12 +39,12 @@ nav {
     padding: 70px;
     font-family: 'Raleway', sans-serif;
     font-weight: 400;
+    font-size: 14px;
 }
 
 .nav-list ul {
     display: flex;
     flex-direction: row;
-    font-size: 14px;
     list-style-type: none;
 }
 
@@ -62,3 +62,102 @@ nav {
     color: var(--white);
 }
 /* header-styling ends */
+
+
+/* container-one styling */
+.container-one {
+    display: flex;
+    flex-direction: column;
+    padding: 50px 70px 70px 70px;
+    text-align: center;
+    color: var(--white);
+}
+
+.container-one .container-a img {
+    max-width: 100%;
+    width: 55%;
+}
+
+.container-one .container-b {
+    margin-top: 40px;
+}
+
+.container-one .container-b h1 {
+    font-family: 'Raleway', sans-serif;
+    font-size: xx-large;
+    font-weight: 700;
+}
+
+.container-one .container-b p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    margin-top: 50px;
+    margin-bottom: 35px;
+}
+
+.container-one .container-b button {
+    border-radius: 5rem;
+    font-size: 14px;
+    font-family: 'Raleway',sans-serif;
+    font-weight: 700;
+    padding: 20px 90px;
+    color: var(--white);
+    background: linear-gradient(to right, hsl(176, 68%, 64%),  hsl(198, 60%, 50%));
+}
+/* container-one styling ends */
+
+
+/*container-two styling*/
+.container-two {
+    display: flex;
+    flex-direction: column;
+    padding: 70px;
+}
+
+.container-two-a {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+}
+
+.image-one, 
+.image-two, 
+.image-three, 
+.image-four {
+    margin: auto;
+    color: var(--white);
+}
+
+.image-one img, 
+.image-two img, 
+.image-three img, 
+.image-four img {
+    margin-bottom: 30px;
+}
+
+.image-one h3, 
+.image-two h3, 
+.image-three h3, 
+.image-four h3 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+}
+
+.image-one p, 
+.image-two p, 
+.image-three p, 
+.image-four p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    margin-top: 20px;
+}
+
+.container-two-b {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    margin-top: 100px;
+}
+/*container-two styling ends*/
