@@ -35,6 +35,7 @@ body {
 nav {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
     padding: 75px;
     font-family: 'Raleway', sans-serif;
@@ -69,7 +70,7 @@ nav {
 .container-one {
     display: flex;
     flex-direction: column;
-    padding: 75px 75px 150px 75px;
+    padding: 75px 75px 190px 75px;
     text-align: center;
     color: var(--white);
     background-color: var(--dark-blue);
@@ -82,6 +83,7 @@ nav {
 .container-one-a img {
     max-width: 100%;
     width: 53%;
+    filter: drop-shadow(10px 10px 5px var(--dark-blue-footer));
 }
 
 .container-one-b {
@@ -119,6 +121,7 @@ nav {
 .container-two {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     padding: 75px;
     background: var(--dark-blue-main);
 }
@@ -143,6 +146,7 @@ nav {
 .image-three img, 
 .image-four img {
     margin-bottom: 30px;
+    filter: drop-shadow(0 0 0.75rem hsl(176, 68%, 64%));
 }
 
 .image-one h3, 
@@ -176,12 +180,19 @@ nav {
 .container-three {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     padding: 75px;
+    color: var(--white);
+}
+
+.container-three a {
+    color: var(--cyan);
 }
 
 .container-three-a img {
     max-width: 100%;
     width: 100%;
+    filter: drop-shadow(10px 10px 5px var(--dark-blue-footer));
 }
 
 .container-three-b {
@@ -213,12 +224,32 @@ nav {
 .container-four {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
     padding: 75px;
+    color: var(--white);
+}
+
+.container-four h4 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+}
+
+.container-four p, small {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.container-four .container-four-image {
+    margin-bottom: auto;
 }
 
 .feedback-container-one {
     background-color: var(--dark-blue-feedback);
     border-radius: 5px;
+    box-shadow: 3px 3px 3px 0 #000000;
     width: 360px;
     margin-top: 35px;
     margin-right: 35px;
@@ -229,6 +260,7 @@ nav {
 .feedback-container-two {
     background-color: var(--dark-blue-feedback);
     border-radius: 5px;
+    box-shadow: 3px 3px 3px 0 #000000;
     width: 360px;
     margin-top: 35px;
     margin-right: 35px;
@@ -236,11 +268,13 @@ nav {
 }
 
 .feedback-container-three {
+    align-items: center;
+    justify-content: center;
     background-color: var(--dark-blue-feedback);
     border-radius: 5px;
+    box-shadow: 3px 3px 3px 0 #000000;
     width: 360px;
     margin-top: 35px;
-    margin-right: auto;
     padding: 25px;
 }
 
@@ -273,4 +307,217 @@ nav {
     margin-top: 6px;
     font-size: 12px;
 }
-/*container-four style ends*/
+/* container-four style ends */
+
+
+/* container-five style */
+.container-five {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: var(--dark-blue);
+    box-shadow: 5px 5px 5px 0 #000000;
+    border-radius: 10px;
+    width: 825px;
+    position: relative;
+    margin-top: 150px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: -130px;
+    color: var(--white);
+}
+
+.container-five h2 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+}
+
+.container-five p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+
+.container-five-one {
+    margin-top: 50px;
+}
+
+.container-five-one h2 {
+    margin-bottom: 25px;
+}
+
+.container-five-one p {
+    margin-bottom: 35px;
+}
+
+.container-five-two {
+    margin-bottom: 35px;
+}
+
+.container-five-two form input {
+    border: transparent;
+    border-radius: 100px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    padding-top: 20px;
+    padding-right: 325px;
+    padding-bottom: 20px;
+    padding-left: 35px;
+    margin-right: 30px;
+}
+
+.container-five-two button {
+    border: transparent;
+    border-radius: 100px;
+    font-size: 14px;
+    font-family: 'Raleway',sans-serif;
+    font-weight: 700;
+    padding: 20px 30px;
+    color: var(--white);
+    background: linear-gradient(to right, hsl(176, 68%, 64%),  hsl(198, 60%, 50%));
+}
+/* container-five style ends */
+
+
+/*footer style starts*/
+footer {
+    background-color: var(--dark-blue-footer);
+    color: #fff;
+    padding: 75px;
+    padding-top: 250px;
+}
+
+.main-logo-footer img {
+    filter: drop-shadow(10px 10px 5px var(--dark-blue-footer));
+}
+
+footer p, li{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+
+.gps {
+    display: flex;
+    flex-direction: row;
+}
+
+.gps img {
+    width: 13px;
+    height: 13px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.gps p {
+    margin-top: 28px;
+    margin-right: auto;
+    margin-left: 40px;
+
+}
+
+.flexing-elements {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.contact-details {
+    margin-top: 55px;
+    margin-right: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+}
+
+.telephone {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: -25px;
+}
+
+.telephone img {
+    width: 18px;
+    height: 18px;
+    margin-top: 30px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.phone-number {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.email {
+    display: flex;
+    flex-direction: row;
+}
+
+.email img {
+    width: 20px;
+    height: 16px;
+    margin-top: 30px;
+    margin-right: 20px;
+}
+
+.email-address {
+    margin-top: auto;
+}
+
+.list-container {
+    display: flex;
+    flex-direction: row;
+    margin-top: 70px;
+    margin-right: auto;
+    margin-left: auto;
+    line-height: 2;
+}
+
+.list-container-one li {
+    list-style-type: none;
+}
+
+.list-container-one a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.list-container-two {
+    margin-left: 150px;
+}
+
+.list-container-two li {
+    list-style-type: none;
+}
+
+.list-container-two a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.social-container {
+    margin-top: 75px;
+    margin-bottom: auto;
+    margin-left: auto;
+}
+
+.social-container ul{
+    display: flex;
+    flex-direction: row;
+}
+
+.social-container li {
+    list-style-type: none;
+    padding-right: 15px;
+}
+
+.social-container a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.attribution {
+    margin-top: 7rem;
+}
+/*footer style ends*/
