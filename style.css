@@ -82,7 +82,7 @@ nav {
 
 .container-one-a img {
     max-width: 100%;
-    width: 53%;
+    /*width: 53%;*/
     filter: drop-shadow(10px 10px 5px var(--dark-blue-footer));
 }
 
@@ -122,7 +122,7 @@ nav {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    padding: 75px;
+    padding: 0 75px 75px 75px;
     background: var(--dark-blue-main);
 }
 
@@ -191,7 +191,6 @@ nav {
 
 .container-three-a img {
     max-width: 100%;
-    width: 100%;
     filter: drop-shadow(10px 10px 5px var(--dark-blue-footer));
 }
 
@@ -314,12 +313,14 @@ nav {
 .container-five {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     text-align: center;
     background-color: var(--dark-blue);
     box-shadow: 5px 5px 5px 0 #000000;
     border-radius: 10px;
+    max-width: 100%;
     width: 825px;
     position: relative;
     margin-top: 150px;
@@ -361,6 +362,7 @@ nav {
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     font-size: 14px;
+    max-width: 100%;
     padding-top: 20px;
     padding-right: 325px;
     padding-bottom: 20px;
@@ -387,10 +389,11 @@ footer {
     color: #fff;
     padding: 75px;
     padding-top: 250px;
+    max-width: 100%;
 }
 
 .main-logo-footer img {
-    filter: drop-shadow(10px 10px 5px var(--dark-blue-footer));
+    filter: drop-shadow(10px 10px 5px #000000);
 }
 
 footer p, li{
@@ -521,3 +524,158 @@ footer p, li{
     margin-top: 7rem;
 }
 /*footer style ends*/
+
+
+/*media query*/
+
+@media screen and (max-width: 765px) {
+
+    /*header-container*/
+    nav {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        padding: 35px;
+    }   
+
+    .nav-list {
+        margin-left: auto;
+    }
+
+    .main-logo img {
+        margin-right: auto;
+    }
+
+
+    /*container-one*/
+    .container-one {
+        padding: 35px;
+    }
+
+    .container-one-a img {
+        width: 100%;
+
+    }
+
+
+    /*container-two*/
+    .container-two {
+        display: flex;
+        flex-direction: column;
+        padding: 35px;
+        margin-top: 150px;
+    }
+
+    .container-two-a,
+    .container-two-b {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: auto;
+        margin-right: auto;
+        margin-bottom: auto;
+        margin-left: auto;
+
+    }
+
+    .container-two-a .image-one{
+        margin-bottom: 150px;
+    }
+
+    .container-two-a .image-two{
+        margin-bottom: 150px;
+    }
+
+    .container-two-b .image-three{
+        margin-bottom: 150px;
+    }
+
+    .container-two-b .image-four {
+        margin-bottom: 150px;
+    }
+
+
+    /*container-three*/
+    .container-three {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 35px;
+    }
+
+    .container-three-b {
+        margin-top: 90px;
+    }
+
+    
+    /*container-four*/
+    .container-four {
+        display: flex;
+        padding: 35px;
+        margin-top: 150px;
+        margin-bottom: 150px;
+    }
+
+    .feedback-container-three {
+       margin-left: -2.2rem;
+    }
+
+
+    /*container-five*/
+    .container-five {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-right: auto;
+        margin-left: auto;
+        max-width: 100%;
+    }
+
+    .container-five-two form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .container-five-two form button {
+        margin-top: 45px;
+    }
+
+
+    /*footer-container*/
+    footer {
+        padding: 35px;
+        padding-top: 200px;
+    }
+
+    .flexing-elements {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .list-container {
+        display: flex;
+        flex-direction: column;
+        margin-left: 0;
+    }
+
+    .contact-details {
+        margin-left: 0;
+    }
+
+    .list-container-two {
+        margin-top: auto;;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .social-container {
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
