@@ -528,7 +528,7 @@ footer p, li{
 
 /*media query*/
 
-@media screen and (max-width: 765px) {
+@media screen and (max-width: 700px) {
 
     /*header-container*/
     nav {
@@ -599,8 +599,6 @@ footer p, li{
 
     /*container-three*/
     .container-three {
-        display: flex;
-        flex-direction: column;
         align-items: center;
         justify-content: center;
         padding: 35px;
